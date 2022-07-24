@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "E6TFY/EbTRPVh2MwG/CyUm1T8ps/tuGzhSAls2yrlPLlUaNHPFk9md2AYT6tepAqzIHifxpNybNJvTa9RsrXgw==",
+  "success": true,
+  "projectFilePath": "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.API\\Mini.E.Store.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dkodaman\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\dkodaman\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\dkodaman\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\dkodaman\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\dkodaman\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\dkodaman\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
