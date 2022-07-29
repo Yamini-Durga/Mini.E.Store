@@ -29,7 +29,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Infrastructure\\Mini.E.Store.Infrastructure.csproj": {
+                "projectPath": "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Infrastructure\\Mini.E.Store.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -42,6 +46,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -61,6 +75,128 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Core\\Mini.E.Store.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Core\\Mini.E.Store.Core.csproj",
+        "projectName": "Mini.E.Store.Core",
+        "projectPath": "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Core\\Mini.E.Store.Core.csproj",
+        "packagesPath": "C:\\Users\\dkodaman\\.nuget\\packages\\",
+        "outputPath": "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dkodaman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://itron.pkgs.visualstudio.com/_packaging/Itron.Cloud.Identity/nuget/v3/index.json": {},
+          "https://itron.pkgs.visualstudio.com/_packaging/Itron.Cloud.Platform/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Infrastructure\\Mini.E.Store.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Infrastructure\\Mini.E.Store.Infrastructure.csproj",
+        "projectName": "Mini.E.Store.Infrastructure",
+        "projectPath": "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Infrastructure\\Mini.E.Store.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\dkodaman\\.nuget\\packages\\",
+        "outputPath": "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dkodaman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://itron.pkgs.visualstudio.com/_packaging/Itron.Cloud.Identity/nuget/v3/index.json": {},
+          "https://itron.pkgs.visualstudio.com/_packaging/Itron.Cloud.Platform/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Core\\Mini.E.Store.Core.csproj": {
+                "projectPath": "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.Core\\Mini.E.Store.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
