@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Mini.E.Store.API.Helpers;
 using Mini.E.Store.Core.Interfaces;
 using Mini.E.Store.Infrastructure.Contexts;
 using Mini.E.Store.Infrastructure.Data;
@@ -31,6 +32,8 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddAutoMapper(typeof(MapperProfile));
             services.AddControllers();
             services.AddDbContext<StoreContext>(x => 
                 x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
@@ -53,6 +56,8 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 

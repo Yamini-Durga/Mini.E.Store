@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Ge9E0Zw8yCaFzvEgO/blTT9Jqpvzdoe2x/HTeT/2nxi+xb9YFmNptrr5PxbRVFuBkuOYCZIpIFtlJNRjwVKAnQ==",
+  "dgSpecHash": "rPQNPP9BR/uu3kkCW2TrdsojFSCpy9u8QGDLMV9YxYgalUnFjYQbOCNTHvxwtDD7wSZhmL+Q7nECzg1dn6imVQ==",
   "success": true,
   "projectFilePath": "C:\\Yamini\\yam\\Learn\\Mini.E.Store\\Mini.E.Store.API\\Mini.E.Store.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dkodaman\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\dkodaman\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\dkodaman\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\dkodaman\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\dkodaman\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.7\\microsoft.data.sqlite.core.6.0.7.nupkg.sha512",
     "C:\\Users\\dkodaman\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
     "C:\\Users\\dkodaman\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.7\\microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",

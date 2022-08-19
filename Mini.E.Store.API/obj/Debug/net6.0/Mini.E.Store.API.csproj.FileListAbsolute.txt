@@ -55,3 +55,7 @@ C:\Yamini\yam\Learn\Mini.E.Store\Mini.E.Store.API\obj\Debug\net6.0\refint\Mini.E
 C:\Yamini\yam\Learn\Mini.E.Store\Mini.E.Store.API\obj\Debug\net6.0\Mini.E.Store.API.pdb
 C:\Yamini\yam\Learn\Mini.E.Store\Mini.E.Store.API\obj\Debug\net6.0\Mini.E.Store.API.genruntimeconfig.cache
 C:\Yamini\yam\Learn\Mini.E.Store\Mini.E.Store.API\obj\Debug\net6.0\ref\Mini.E.Store.API.dll
+C:\Yamini\yam\Learn\Mini.E.Store\Mini.E.Store.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Yamini\yam\Learn\Mini.E.Store\Mini.E.Store.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Yamini\yam\Learn\Mini.E.Store\Mini.E.Store.API\obj\Debug\net6.0\Mini.E.Store.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Yamini\yam\Learn\Mini.E.Store\Mini.E.Store.API\bin\Debug\net6.0\Mini.E.Store.API.staticwebassets.runtime.json
