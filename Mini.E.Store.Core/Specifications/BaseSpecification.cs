@@ -12,8 +12,14 @@ namespace Mini.E.Store.Core.Specifications
         public Expression<Func<T, bool>> Criteria {get; }
 
         public List<Expression<Func<T, object>>> Includes { get; } = new List<Expression<Func<T, object>>>();
-        public Expression<Func<T, object>> OrderBy { get; set; }
-        public Expression<Func<T, object>> OrderByDescending { get; set; }
+        public Expression<Func<T, object>> OrderBy { get; private set; }
+        public Expression<Func<T, object>> OrderByDescending { get; private set; }
+
+        public int Take { get; private set; }
+
+        public int Skip { get; private set; }
+
+        public bool isPagingEnabled { get; private set; }
 
         public BaseSpecification()
         {
@@ -36,6 +42,13 @@ namespace Mini.E.Store.Core.Specifications
         protected void AddOrderByDesc(Expression<Func<T, object>> orderByDesc)
         {
             OrderByDescending = orderByDesc;
+        }
+
+        protected void ApplyPaging(int skip, int take)
+        {
+            Skip = skip;
+            Take = take;
+            isPagingEnabled = true;
         }
     }
 }
