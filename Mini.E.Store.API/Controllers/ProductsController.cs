@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Mini.E.Store.API.Helpers;
 using Mini.E.Store.Core.Dtos;
 using Mini.E.Store.Core.Interfaces;
 using Mini.E.Store.Core.Models;
@@ -31,11 +32,16 @@ namespace Mini.E.Store.API.Controllers
             _mapper = mapper;
         }
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductDto>>> GetProducts()
+        public async Task<ActionResult<Pagination<ProductDto>>> GetProducts([FromQuery] ProductSpecParams productParams)
         {
-            var spec = new ProductsWithTypesAndBrandsSpecification();
+            var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
             var products = await _productRepo.GetAsync(spec);
-            return Ok(_mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductDto>>(products));
+            var countSpec = new ProductWithFiltersForCountSpecification(productParams);
+            var count = await _productRepo.CountAsync(countSpec);
+            var data = _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductDto>>(products);
+            return Ok(new Pagination<ProductDto>(
+                productParams.PageIndex, productParams.PageSize, count, data
+                ));
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductDto>> GetProduct(int id)
